@@ -1,3 +1,28 @@
+const play = document.getElementById("play");
+ const music = document.querySelector("audio");
+  const img = document.getElementById("img");
+
+ let isPlay = false;
+ //play functiom
+ const playMusic= ()=>{
+    isPlay = true;
+     music.play();
+     play.classList.replace("fa-play","fa-pause");
+     img.classList.add("anime");
+ };
+ //pause function
+ const pauseMusic= ()=>{
+    isPlay = false;
+     music.pause();
+     play.classList.replace("fa-pause","fa-play");
+     img.classList.remove("anime");
+ };
+ play.addEventListener("click",()=>{
+     isPlay ? pauseMusic() : playMusic();
+ });
+
+
+
 $(function() {
     $('.gallery-slideshow').slideshow({
       interval: 2000,
@@ -71,5 +96,9 @@ function myFunction(imgs) {
   expandImg.parentElement.style.display = "block";
 }
 
-  
 
+
+
+
+
+ 
