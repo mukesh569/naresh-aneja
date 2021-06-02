@@ -105,9 +105,7 @@ top:0; left:0; z-index: -1; transform: translateY(-100%);  transition: all .2s l
     margin: 2rem 0;    color:#282828; }
 .btn-content-book { width: 100%;  display: flex;  justify-content: center; margin-top: 2rem;}
 /*-------------------------gallary css start----------------------------------*/
-.gallery-container { background: #000100; width: 100%; margin: auto;display: flex;justify-content: center;
-    flex-direction: column;  align-items: center;}
-.gallery-container { background: var(--black);  border-bottom: .2rem solid var(--yellow);
+.gallery-container {
  width: 100%;   padding: 2rem  0;   display: flex;   flex-direction: column;    min-height: calc(100vh - 10rem);}
 .gallery-container h1 {font-size: 4rem; width:100%; text-align: center;color: #f1c40f;
     text-transform: capitalize;line-height: 5rem; position: relative; margin-bottom: 4rem;
@@ -149,11 +147,18 @@ text-transform: uppercase;}
   background: #fff;}
 .event-container{width:100%; position: relative; display: flex; flex-direction: row;}
 .event-container .event-box {margin: 4rem; display: flex;width: 33%;overflow: hidden;
- flex-direction: column;box-shadow: 0px 0px 10px 5px rgb(202 175 105);
+ flex-direction: column;box-shadow: 0px 0px 12px 1px rgb(202 175 105);
 }
 .event-pic{ width:100%; height: 20rem;}
 .event-pic img{ width:100%; height: 100%; }
-.event-detail {width: 100%;padding: 2rem; font-size: 2rem; border: .1rem solid #f1c40f;border-top: none;}
+.event-detail {
+    width: 100%;
+    padding: 2rem;
+    font-size: 2rem;
+    border: .1rem solid #f1c40f;
+    border-top: none;
+    background: #fff;
+}
 .event-time,.event-loc{ width:100%; padding-bottom: 2rem; }
 .event-time i,.event-loc i{ margin-right: 1rem; color:#f1c40f;; }
 .event-time span,.event-loc span{margin-right: 1rem; color:#7b6713;}
@@ -292,25 +297,148 @@ aside{width:30%; position: relative; padding:1rem;}
 .image-container .img-box .img-sec1 img:hover{ transform: scale(1.3); }
 
 .music_container{ width:30%; height: 50rem; background: #fff; border-radius: 2rem;
-box-shadow: 0 1.2rem 2rem 1rem rgba(0,0,0,0.3); padding: 2rem; text-align: center; float: left; margin:2rem; }
+box-shadow: 0 1.2rem 0.8rem 0.5rem rgba(0,0,0,0.1); padding: 2rem; text-align: center; float: left; margin:2rem; }
 .title{ font-size: 3.5rem; letter-spacing: .2rem; word-spacing: .5rem; text-transform: uppercase;
 text-shadow: 0 1rem 1rem rgba(0,0,0,0.3); margin: 1.3rem 0 2rem;}
 .artist{font-size: 2rem; letter-spacing: .2rem; word-spacing: .5rem; text-transform: capitalize;
      margin: 1rem 0 1rem;}
 .img_contaner{width: 20rem; height: 20rem; margin: 3rem auto;} 
-.img_contaner img{ width:inherit; height: inherit; border-radius: 50%;box-shadow: 0 1.2rem 2rem 1rem rgba(0,0,0,0.3);
+.img_contaner img{ width:inherit; height: inherit; border-radius: 50%;
+  box-shadow: 0 .2rem 1rem .1rem rgba(0,0,0,0.3);
 object-fit: cover; }
 .music_control{ display: flex; justify-content: space-around; align-items: center; height: 5rem; }
-.music_control .fas{ font-size: 2rem;line-height: 5rem; cursor: pointer; filter: drop-shadow(0 2rem 3rem  rgba(0,0,0,0.6) );}
+.music_control .fas{ font-size: 2rem;line-height: 5rem; cursor: pointer; 
+  filter: drop-shadow(0 1rem 1rem  rgba(0,0,0,0.6) );}
 .music_control .fas:hover{ color: gray;}
 .main_button{ width:5rem;height: 5rem; border-radius: 50%; background: #111; color: #f6f6f6; font-size: 1.4rem;
 display: flex; justify-content: center;  align-items: center;}
 .main_button:hover{background: #f6f6f6; color: #111; box-shadow: 0 1rem 2rem 0.2rem rgba(0,0,0,0.4); }
 .anime{animation: rotatePlayer 3s linear infinite;}
+.tab {
+    overflow: hidden;
+    border: 1px solid #f1c40f;
+    background-color: #f1c40f;
+    border-radius: 1rem;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  color: #7b6713;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+ background-color: rgba(0,0,0,0.3);
+    color: #fff;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #7b6713;
+    color: #fff;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+ 
+
+}
+.book-main {
+    padding: 1rem;
+    width: 100%;
+}
+.book-box {
+    width: 17%;
+    display: flex;
+    float: left;
+    margin:1rem;
+
+}
+.book-box a{text-decoration: none;}
+.book-box a img{width:100%; padding: 2rem 2rem 0rem;}
+.book-box a span {text-align: center;
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    
+    line-height: 2.4rem;
+    display: block;
+    width: 100%;
+    color: #7b6713;
+}
+
+
 @keyframes rotatePlayer{
     from{ transform: rotate(0deg);}
     to{ transform: rotate(360deg);}
 }
+
+
+.event-container-page {
+    width: 100%;
+    position: relative;
+    
+}
+.event-container-page .event-box {
+    margin: 4rem;
+    display: flex;
+    width: 26.8%;
+    overflow: hidden;
+    flex-direction: column;
+    box-shadow: 0px 0px 12px 1px rgb(202 175 105);
+    float: left;
+}
+
+
+
+.contact-container {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.contact-form {
+    width: 40%;
+    background: #fff;
+    box-shadow: 0px 0px 18px 0px #999;
+    border-radius: .7rem;
+    padding:2rem 1rem;
+}
+.contact-form h1{font-size: 3rem; width:100%; text-align: center; text-transform: capitalize;
+    line-height: 5rem;position: relative;margin-bottom: 4rem;color: #f1c40f;
+    text-shadow: 0px 2px 1px #7b6713;}
+ .contact-form h1::before{ content: ''; position:absolute; width:30%; background: #7b6713;
+ height: .4rem;left:50%; top:110%; transform: translateX(-50%);}
+form {
+    width: 100%;
+    padding: 2rem 10%;
+}
+form .input-control {
+    width: 100%;
+    padding-bottom: 2rem;
+}
+form .input-control label{ font-size: 1.8rem; }
+form .input-control input { border-radius: .4rem; outline: none; border:.2rem solid #ddd;
+    width: 100%;
+    height: 3.5rem;
+    padding: 1rem;font-size: 1.5rem;
+}
+form .input-control input:focus{ border-color: #f1c40f; }
+
+form .input-control textarea{width:100%;border-radius: .4rem; outline: none;
+ padding: 1rem;font-size: 1.5rem;border:.2rem solid #ddd; text-align:left;}
+form button{ padding:1.2rem 3rem; font-size: 1.8rem;background: #f1c40f; color: #7b6713;
+ border:.3rem solid #f1c40f ; border-radius: .5rem; }
+form button:hover{ color: #7b6713; background: #f7f7f7; }
+
 /*-------------------responsive css start----------*/
 @media screen and (max-width:1025px) {
   html{ font-size: 52.5%;font-family: myfont; text-decoration: none;}
@@ -324,8 +452,9 @@ nav { width: 80%; display: flex; justify-content: flex-end;}
   html{ font-size: 42.5%; text-decoration: none;}
 }
 @media screen and (max-width:568px) and (min-width:300px){
-  .mainContainer {  width: 100vh;}
-ul.gallery-slideshow li img { width: 100% !important;}
+ .mainContainer {    width: 100vw;}
+  ul.gallery-slideshow { width: 100vw !important; height: 50vh !important;}
+ul.gallery-slideshow li img { width: 100%;height: 100%;  object-fit: contain;}
 .wapper-about-home,.book-content ul,footer { display: block;}
 .about-img img { width: 100%; height: auto;}
 .about-img,.about-content { width: 100%;}
@@ -333,6 +462,30 @@ ul.gallery-slideshow li img { width: 100% !important;}
 .Pic-column { width: 47%;}
 footer .links,footer .logo-f,footer .social,footer .contact {
   width: 45%;  float: left;}
+  .event-container {   display: block;}
+.event-container .event-box {     width: 90%;  }
+.banner {   height: 22rem;}
+.page {   display: block }
+article {   width: 100%; padding:1rem;}
+aside { width: 100%;  position: relative;  padding: 1rem; float: left;}
+.music_container { margin:1rem 0rem;   width: 100%;}
+.image-container .img-box ,.video-container .v-box {   width: 100%;}
+.book-box {
+    width: 44%;
+    display: block;
+    float: left;
+    margin: 1rem;
+}
+.event-container-page .event-box {
+   
+    width: 90%;
+   
+}
+.contact-form {
+    width: 100%;
+    
+}
+    
 }
 @media screen and (max-width:768px) and (min-width:449px){
   .mainContainer {  width: 100%;}

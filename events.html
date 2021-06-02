@@ -8,7 +8,7 @@
     
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery-gallery.js"></script>
-    <title>Document</title>
+    <title>video</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"  />
   </head>
   <body>
@@ -22,7 +22,7 @@
           <ul class="menu">
             <li><a href="index.html">home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="">Gallery</a>
+            <li><a href="galllery.html">Gallery</a>
             <ul>
               <li><a href="audio.html">Audio</a></li>
               <li><a href="video.html">Video</a></li>
@@ -37,144 +37,23 @@
     </div>
   </div>
 <!-- ---------header -section end-------------- -->
-<!-- ---------slider -section start-------------- -->
-  <div class="slider">
-    <ul class="gallery-slideshow">
-      <li><img src="img/slider-1.JPG"/></li>
-      <li><img src="img/slider-2.JPG"/></li>
-      <li><img src="img/slider-3.JPG"/></li>
-      <li><img src="img/slider-4.JPG"/></li>
-    </ul>
+<!-- ---------banner -section start-------------- -->
+<section class="banner">
+  <img src="img/about.jpg" alt="banner-image">
+  <h1>Events</h1>
+  <div class="breadcrumb">
+     <ul>
+       <li><a href="">HOME  <i class="fas fa-angle-double-right"></i></a></li> 
+        <li>Events</li>
+     </ul>
   </div>
-<!-- ---------slider -section end-------------- ------->
-<!-- ---------about-home -section start-------------- -->
-  <div class="about">
-    <div class="wapper-about-home">
-      <div class="about-img">
-        <img src="img/about.jpg">
-      </div>
-      <div class="about-content">
-        <h1>Prem Prakash Panth </h1>
-        <p>Prem Prakash Panth is a Hindu spiritual and religious organization which was
-          founded by Acharya Pooj Shree 1008 Satguru Swami Teonram Ji Maharaj in Sindh
-          [Undivided India]. The panth was propagated to India by Satguru Swami Teoonram´s successor,
-          Satguru Swami Sarvanand Ji Maharaj after ...
-        </p>
-        <div class="btn-content">
-          <a href="#" class="btn">Read More</a>
-        </div>
-      </div>
-    </div>
-  </div>
-<!-- ---------about-home -section end-------------- -->
-<!-- ---------book-home -section start-------------- -->
-  <div class="book">
-    <div class="wapper-book-home">
-      <div class="book-content">
-        <h1>sahitya bhandar</h1>
-        <ul>
-          <li>
-            <a href=""><img src="img/pdf-cover-1.jpg" alt="">
-              <span>Brahma Darshini [Hindi]</span>
-            </a>
-          </li>
-          <li>
-            <a href=""><img src="img/pdf-cover-1.jpg" alt="">
-              <span>Brahma Darshini [Hindi]</span>
-            </a>
-          </li>
-          <li>
-            <a href=""><img src="img/pdf-cover-1.jpg" alt="">
-              <span>Brahma Darshini [Hindi]</span>
-            </a>
-          </li>
-          <li>
-            <a href=""><img src="img/pdf-cover-1.jpg" alt="">
-              <span>Brahma Darshini [Hindi]</span>
-            </a>
-          </li>
-          <li>
-            <a href=""><img src="img/pdf-cover-1.jpg" alt="">
-              <span>Brahma Darshini [Hindi]</span>
-            </a>
-          </li>
-          <li>
-            <a href=""><img src="img/pdf-cover-1.jpg" alt="">
-              <span>Brahma Darshini [Hindi]</span>
-            </a>
-          </li>
-          
-        </ul>
-        <div class="btn-content-book">
-          <a href="#" class="btn">view More</a>
-        </div>
-      </div>
-    </div>
-  </div>
-<!-- ---------book-home -section end-------------- -->
-<!-- ---------gallery-home -section start-------------- -->
-  <div class="gallery-container">
-    <h1><span>Gallery</span></h1>
-    <div id="myBtnContainer">
-      <button class="btn-photo myactive" onclick="filterSelection('all')">All </button>
-      <button class="btn-photo" onclick="filterSelection('Audio')">Audio</button>
-      <button class="btn-photo" onclick="filterSelection('Video')">Video</button>
-      <button class="btn-photo" onclick="filterSelection('image')">image</button>
-    </div>
-    <div class="pic-containter">
-      
-      <div class="Pic-column Video">
-        <div class="vcontent">
-          <iframe  src="https://www.youtube.com/embed/KNi5eNluCF0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </div>
-      <div class="Pic-column image">
-        <div class="content">
-          <img src="img/img-2.JPG" alt="image" style="width:100%">
-        </div>
-      </div>
-      <div class="Pic-column  Audio">
-        <div class="content">
-          <h1>no Audio</h1>
-        </div>
-      </div>
-       <div class="Pic-column image">
-        <div class="content">
-          <img src="img/img-1.JPG" alt="image" style="width:100%">
-        </div>
-      </div>
-      <div class="Pic-column Video">
-        <div class="vcontent">
-          <iframe  src="https://www.youtube.com/embed/KNi5eNluCF0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </div>
-      <div class="Pic-column image">
-        <div class="content">
-          <img src="img/img-1.JPG" alt="image" style="width:100%">
-        </div>
-      </div>
-      <div class="Pic-column image">
-        <div class="content">
-          <img src="img/img-2.JPG" alt="image" style="width:100%">
-        </div>
-      </div>
-      <div class="Pic-column  Audio">
-        <div class="content">
-          <h1>no Audio</h1>
-        </div>
-      </div>
-    </div>
-     <div class="btn-content-book">
-          <a href="#" class="btn">view More</a>
-        </div>
-  </div>
-<!-- ---------gallery-home -section end-------------- -->
-<!-- ---------event -home -section start-------------- -->
-  <div class="book">
-    <div class="wapper-book-home">
-      <div class="book-content">
-        <h1>Events</h1>
-        <div class="event-container">
+</section> 
+<!-- ---------banner -section end-------------- -->
+<section class="page">
+  <article style="width:100%;padding:0px;">
+    <div class="video-container">
+      <h2>Events</h2>
+       <div class="event-container-page">
            <div class="event-box">
               <div class="event-pic">
                  <img src="img/about.jpg">
@@ -187,8 +66,12 @@
                   <div class="event-loc">
                       <i class="fas fa-map-marker-alt"></i><span>  main market,Jaipur-122202</span>
                   </div>
+                  <p>
+                    Prem Prakash Panth is a Hindu spiritual and religious organization which was
+          founded by Acharya Pooj S...
+                  </p>
                   <div class="btn-content-book">
-                    <a href="#" class="btn">Read More</a>
+                    <a href="event-detail.html" class="btn">Read More</a>
                   </div>
                 </div> 
               </div>
@@ -205,8 +88,12 @@
                   <div class="event-loc">
                       <i class="fas fa-map-marker-alt"></i><span>  main market,Jaipur-122202</span>
                   </div>
+                  <p>
+                    Prem Prakash Panth is a Hindu spiritual and religious organization which was
+          founded by Acharya Pooj S...
+                  </p>
                   <div class="btn-content-book">
-                    <a href="#" class="btn">Read More</a>
+                    <a href="event-detail.html" class="btn">Read More</a>
                   </div>
                 </div> 
               </div>
@@ -223,22 +110,47 @@
                   <div class="event-loc">
                       <i class="fas fa-map-marker-alt"></i><span>  main market,Jaipur-122202</span>
                   </div>
+                  <p>
+                    Prem Prakash Panth is a Hindu spiritual and religious organization which was
+          founded by Acharya Pooj S...
+                  </p>
                   <div class="btn-content-book">
-                    <a href="#" class="btn">Read More</a>
+                    <a href="event-detail.html" class="btn">Read More</a>
                   </div>
                 </div> 
               </div>
    
-
+ <div class="event-box">
+              <div class="event-pic">
+                 <img src="img/about.jpg">
+              </div>
+              <div class="event-detail">
+                  <div class="event-time" >
+                     <i class="fas fa-calendar-alt"></i><span>12 jan -2021</span>
+                     <i class="fas fa-clock"></i><span>11am to 4pm</span>
+                  </div>
+                  <div class="event-loc">
+                      <i class="fas fa-map-marker-alt"></i><span>  main market,Jaipur-122202</span>
+                  </div>
+                  <p>
+                    Prem Prakash Panth is a Hindu spiritual and religious organization which was
+          founded by Acharya Pooj S...
+                  </p>
+                  <div class="btn-content-book">
+                    <a href="event-detail.html" class="btn">Read More</a>
+                  </div>
+                </div> 
+              </div>
            
         </div>
-        <div class="btn-content-event">
-                <a href="#" class="btn">view All</a>
-            </div>
-      </div>
-    </div>
-  </div>
-<!-- ---------event-home -section end-------------- -->
+        </div>
+      
+    
+    
+  </article>
+  
+</section>
+
 
 <!-- ---------footer -section start-------------- -->
   <footer>
